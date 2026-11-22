@@ -12,6 +12,9 @@ const env = {
     user: process.env.DB_USER || 'postgres',
     password: String(process.env.DB_PASSWORD ?? ''),
     database: process.env.DB_NAME || 'store_rating_platform',
+    ssl: ['localhost', '127.0.0.1'].includes(process.env.DB_HOST)
+  ? false
+  : { rejectUnauthorized: false },
   },
   jwtSecret: process.env.JWT_SECRET,
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '1d',
