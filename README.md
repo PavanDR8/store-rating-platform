@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rollex - Store Rating Platform
 
 A full-stack web app where normal users rate stores from 1 to 5, store owners see who rated their store, and an administrator manages everything.
@@ -169,3 +170,7 @@ Manual UI checklist: signup validation messages, login for all three roles and r
 - **Public signup only creates normal users.** The role is ignored if sent in the request. There is no public admin registration.
 - **The role is checked in the database on every request**, not only inside the token.
 - **Passwords:** the 8-16 character rule (one uppercase, one special character) is enforced on signup, admin-created users and password change.
+=======
+# store-rating-platform
+"A full-stack store rating platform project."
+>>>>>>> 5173c8e01df7fb833e4ff74b4f9ad861ecc88b07
